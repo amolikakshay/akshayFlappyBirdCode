@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "remote": {
+      "type": "object",
+      "properties": {
+        "prod": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "urlId": {
+              "type": "string"
+            },
+            "displayName": {
+              "type": "string"
+            },
+            "env": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "notes": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "urlId",
+            "displayName",
+            "env",
+            "url",
+            "notes"
+          ]
+        }
+      },
+      "required": [
+        "prod"
+      ],
+      "title": "Mobile Endpoint"
+    },
+    "gravity": {
+      "type": "number",
+      "title": "Gravity",
+      "default": 1
+    },
+    "gap": {
+      "type": "number",
+      "title": "Pipe gap",
+      "default": 85
+    },
+    "thrust": {
+      "type": "number",
+      "title": "Flap acceleration",
+      "default": 3.6
+    }
+  },
+  "required": [
+    "remote",
+    "gravity",
+    "gap",
+    "thrust"
+  ],
+  "title": "App settings",
+  "definitions": {}
+}

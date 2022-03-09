@@ -1,0 +1,16 @@
+{
+  "remote": {
+    "prod": {
+      "id": {},
+      "urlId": {},
+      "displayName": {},
+      "env": {},
+      "url": {},
+      "notes": {}
+    },
+    "ui:field": "mobileEndpointPicker"
+  },
+  "gravity": {},
+  "gap": {},
+  "thrust": {}
+}
